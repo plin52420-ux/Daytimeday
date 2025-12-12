@@ -225,7 +225,7 @@ input, select, textarea, .user-info-input {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  padding-top: 0;
+  padding-top: 80px;
   padding-bottom: 20px;
   z-index: 1;
 }
@@ -241,7 +241,6 @@ input, select, textarea, .user-info-input {
 
 .section-home{
   width: 100%;
-  padding-top: 80px;
 }
 
 .section + .section {
