@@ -225,9 +225,17 @@ input, select, textarea, .user-info-input {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  max-width: 720px;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 30px; /* 電腦版底部內距 */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
   z-index: 1;
+  /* 使用 100vh 確保在 Chrome 中也能正確計算高度 */
+  height: 100vh;
+  max-height: 100vh;
 }
 .daytimeday-main-content{
   overflow-y: hidden;
@@ -457,7 +465,11 @@ input, select, textarea, .user-info-input {
   .page-daytimeday .main-content{
     padding-top: 80px; /* 匹配 header 實際高度 */
   }
-  
+
+  /* 首頁：手機版增加底部內距，確保 Chrome 地址欄不會切掉內容 */
+  .index-main-content{
+    padding-bottom: 120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

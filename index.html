@@ -84,7 +84,7 @@
           <div class="banner-wrapper mb-3">
             <img src="./src/assets/img/img_banner_main_pic.jpg" alt="白晝日 BANNER" class="banner-img" />
           </div>
-          <p class="text-stroke mb-2">我們是最小單位的理念實現者9999</p>
+          <p class="text-stroke mb-2">我們是最小單位的理念實現者10</p>
           <!-- 影片播放器區塊：隨機播放 vid_main_01 / vid_main_02 -->
           <div class="video-player-wrapper mb-3">
             <div class="video-player">
@@ -205,6 +205,32 @@
         var mainContent = document.querySelector('.main-content');
         if (mainContent) {
           mainContent.scrollTop = 0;
+        }
+
+        // 修正手機 Chrome 瀏覽器的視窗高度問題
+        var indexMainContent = document.querySelector('.index-main-content');
+        if (indexMainContent) {
+          // 使用實際視窗高度來設定容器高度
+          function setHeight() {
+            var vh = window.innerHeight;
+            indexMainContent.style.height = vh + 'px';
+            indexMainContent.style.maxHeight = vh + 'px';
+          }
+          
+          // 初始設定
+          setHeight();
+          
+          // 監聽視窗大小變化（處理 Chrome 地址欄顯示/隱藏）
+          // 使用防抖來優化性能
+          var resizeTimer;
+          window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(setHeight, 150);
+          });
+          
+          window.addEventListener('orientationchange', function() {
+            setTimeout(setHeight, 100);
+          });
         }
 
         var videoEl = document.getElementById('mainVideo');
