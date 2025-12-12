@@ -218,6 +218,17 @@ input, select, textarea, .user-info-input {
   display: flex;
   flex-direction: column;
 }
+.index-main-content{
+  position: fixed;   /* 鎖定這個容器，不讓它亂跑 */
+  top: 0;            /* 【關鍵】從螢幕最頂端開始 (Header的背後) */
+  bottom: 50px;      /* 底部留給 Footer */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 20px;
+  z-index: 1;
+}
 .daytimeday-main-content{
   overflow-y: hidden;
 }
@@ -228,7 +239,10 @@ input, select, textarea, .user-info-input {
   flex-direction: column;
 }
 
-
+.section-home{
+  width: 100%;
+  padding-top: 80px;
+}
 
 .section + .section {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
