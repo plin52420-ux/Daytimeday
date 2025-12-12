@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 沒有獨立 favicon 檔案時，先使用 LOGO 代替，避免 404 -->
+    <link rel="icon" type="image/png" href="./src/assets/img/img_logo.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>白晝日</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- 主樣式（由 SCSS 編譯為 CSS 後放在這個路徑） -->
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="bottom-bg">
+      <div id="app" class="page-wrapper">
+      <!-- HEADER：固定在最上方 -->
+      <header class="main-header d-flex align-items-center justify-content-between px-3">
+        <!-- 漢堡選單按鈕（左） -->
+        <button
+          class="btn p-0 header-icon-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+        >
+          <img src="./src/assets/img/img_hamberger_header_btn.png" alt="選單" class="header-icon-img" />
+        </button>
+
+        <!-- LOGO（中） -->
+        <div class="header-logo">
+          <img src="./src/assets/img/img_logo.png" alt="白晝日 LOGO" class="header-logo-img" />
+        </div>
+
+        <!-- 商城按鈕（右，連到獨立商城頁） -->
+        <a href="./pages/store.html" class="btn p-0 header-icon-btn">
+          <img src="./src/assets/img/img_store_header_btn.png" alt="商城" class="header-icon-img" />
+          <span style="color: #fff; font-size: 10px; white-space: nowrap;background: #262626 ;padding: 2px 4px; border-radius: 10px;">Web Store</span>
+        </a>
+      </header>
+
+      <!-- 漢堡選單：左側滑出 -->
+      <div
+        class="offcanvas offcanvas-start main-menu"
+        tabindex="-1"
+        id="mainMenu"
+        aria-labelledby="mainMenuLabel"
+      >
+        <div class="offcanvas-body">
+          <nav class="nav flex-column gap-2 align-items-center">
+            <a class="nav-link" href="./pages/daytimeday.html">白晝日</a>
+            <a class="nav-link" href="./pages/adventurer.html">關於冒險者</a>
+            <a class="nav-link" href="./index.html#download">開啟旅程</a>
+            <a class="nav-link" href="./pages/future-plan.html">未來計畫</a>
+            <a class="nav-link" href="./pages/funding.html">贊助我們</a>
+            <a class="nav-link" href="./pages/store.html">網頁商城</a>
+            <a class="menu-bottom-btn" href="./index.html#home">
+              <img
+                src="./src/assets/img/img_back_index_btn.png"
+                alt="回到首頁"
+                class="menu-back-index-img"
+              />
+              <span>回到首頁</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- 主內容：可滾動 -->
+      <main class="main-content">
+        <!-- 首頁區塊：BANNER + 播放器 + 文字 + 下載區域 -->
+        <section id="home" class="section section-home">
+          <!-- BANNER -->
+          <div class="banner-wrapper mb-3">
+            <img src="./src/assets/img/img_banner_main_pic.jpg" alt="白晝日 BANNER" class="banner-img" />
+          </div>
+          <p class="text-stroke mb-2">我們是最小單位的理念實現者</p>
+          <!-- 影片播放器區塊：隨機播放 vid_main_01 / vid_main_02 -->
+          <div class="video-player-wrapper mb-3">
+            <div class="video-player">
+              <video
+                id="mainVideo"
+                class="w-100"
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+              ></video>
+              
+            </div>
+          </div>
+
+          <!-- 文字內容（佔位） -->
+          <div class="section-text mb-4">
+            <p class="text-stroke mb-4">白晝日是個旅程</p>
+            <div class="section-wrap-text text-stroke">
+              <span>我們相信有些旅程能讓人記住</span>
+              <span>這個世界雖然有趣</span>
+              <span>但仍在持續完善和擴大中</span>
+              <span>我們有著最大的誠意和堅持</span>
+              <span>如果你也喜歡並認同</span>
+              <span>也希望不要吝嗇給我們肯定</span>
+            </div>
+          </div>
+
+          <!-- 下載區域 -->
+          <section id="download" class="download-section">
+            <h2 class="download-title mb-3">立刻下載</h2>
+            <!-- 兩個 QRCode：左右排列 -->
+            <div class="download-wrap">
+              <div class=" text-center qrcode-box">
+                <img src="./src/assets/img/img_google_qrcode_download.jpg" alt="QR Store 下載" class="img-qrcode" />
+                <a href="https://play.google.com/store/apps/details?id=com.yunxun.daytimeday" class="download-app-link" target="_blank" rel="noopener noreferrer">
+                   <img src="./src/assets/img/img_google_play.png" alt="Google Play 下載" class="img-fluid" />
+                </a>
+              </div>
+              <div class=" text-center qrcode-box">
+                <img src="./src/assets/img/img_apple_qrcode_download.jpg" alt="QR Store 下載" class="img-qrcode" />
+                <a href="https://apps.apple.com/app/id6755228891" class="download-app-link" target="_blank" rel="noopener noreferrer">
+                  <img src="./src/assets/img/img_app_store.png" alt="App Store 下載" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+
+            <p class="text-center mb-1 text-stroke">或者</p>
+            <p class="text-center mb-3 text-stroke">聯繫我們</p>
+
+            <!-- 聯絡管道圖示，5 個一行 -->
+            <div class="contact-icons d-flex flex-wrap justify-content-center">
+              <a href="https://forum.gamer.com.tw/B.php?bsn=25612" class="contact-icon-item" target="_blank" rel="noopener noreferrer">
+                <img src="./src/assets/img/icon_baha_img.png" alt="gamer" />
+              </a>
+              <a href="https://www.tiktok.com/@venture.studio" class="contact-icon-item" target="_blank" rel="noopener noreferrer">
+                <img src="./src/assets/img/icon_ticktok_img.png" alt="Ticktok" />
+              </a>
+              <a href="https://www.youtube.com/@VENTYRE" class="contact-icon-item" target="_blank" rel="noopener noreferrer">
+                <img src="./src/assets/img/icon_yt_img.png" alt="YouTube" />
+              </a>
+              <a href="#" class="contact-icon-item">
+                <img src="./src/assets/img/icon_ig_img.png" alt="Instagram" />
+              </a>
+              <a href="#" class="contact-icon-item">
+                <img src="./src/assets/img/icon_in_img.png" alt="IN" />
+              </a>
+               <a href="#" class="contact-icon-item">
+                <img src="./src/assets/img/icon_x_img.png" alt="X/Twitter" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61584557774736" class="contact-icon-item" target="_blank" rel="noopener noreferrer">
+                <img src="./src/assets/img/icon_fb_img.png" alt="Facebook" />
+              </a>
+              <a href="#" class="contact-icon-item">
+                <img src="./src/assets/img/icon_tg_img.png" alt="Telegram" />
+              </a>
+              <a href="#" class="contact-icon-item">
+                <img src="./src/assets/img/icon_wc_img.png" alt="WeChat" />
+              </a>
+              <a href="https://line.me/R/ti/p/@252dbqfg" class="contact-icon-item" target="_blank" rel="noopener noreferrer">
+                <img src="./src/assets/img/icon_line_img.png" alt="Line" />
+              </a>
+              <a href="https://www.threads.com/@adventurer.studio.tw" class="contact-icon-item" target="_blank" rel="noopener noreferrer">
+                <img src="./src/assets/img/icon_threads_img.png" alt="Threads" />
+              </a>
+              <a href="https://discord.com/invite/pqZe3zf9" class="contact-icon-item" target="_blank" rel="noopener noreferrer">
+                <img src="./src/assets/img/icon_discord_img.png" alt="Discord" />
+              </a>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <!-- FOOTER：固定在最下方 -->
+      <footer class="main-footer d-flex justify-content-center align-items-center">
+        <a href="./pages/adventurer.html" class="btn p-0 footer-main-btn">
+          <img
+            src="./src/assets/img/img_footer_main_btn.png"
+            alt="關於冒險者"
+            class="footer-main-btn-img"
+          />
+        </a>
+      </footer>
+      </div>
+    </div>
+    
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // 確保 main-content 初始滾動位置在頂部
+        var mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+          mainContent.scrollTop = 0;
+        }
+
+        var videoEl = document.getElementById('mainVideo');
+        var muteBtn = document.getElementById('toggleMuteBtn');
+
+        if (!videoEl) return;
+
+        // 兩個主影片來源
+        var sources = [
+          './src/assets/vid/vid_main_01.mp4',
+          './src/assets/vid/vid_main_02.mp4'
+        ];
+
+        // 1. 一進頁隨機選一部影片
+        var randomIndex = Math.floor(Math.random() * sources.length);
+        videoEl.src = sources[randomIndex];
+
+        // 2. 預設靜音自動播放
+        videoEl.muted = true;
+        videoEl.autoplay = true;
+        videoEl.play().catch(function(){ /* 某些瀏覽器可能阻擋自動播放，忽略錯誤即可 */ });
+
+        // 聲音開關按鈕
+        if (muteBtn) {
+          var updateMuteText = function () {
+            muteBtn.textContent = videoEl.muted ? '開啟聲音' : '關閉聲音';
+          };
+          updateMuteText();
+
+          muteBtn.addEventListener('click', function () {
+            videoEl.muted = !videoEl.muted;
+            updateMuteText();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
