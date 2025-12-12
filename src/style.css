@@ -242,6 +242,7 @@ input, select, textarea, .user-info-input {
 .section-home{
   width: 100%;
   padding-top: 80px;
+  padding-bottom: 8rem;
 }
 
 .section + .section {
@@ -299,7 +300,6 @@ input, select, textarea, .user-info-input {
 .contact-icons {
   max-width: 280px;
   margin: 0 auto;
-  margin-bottom: 8rem;
 }
 .img-fluid{
   max-width: 150px;
