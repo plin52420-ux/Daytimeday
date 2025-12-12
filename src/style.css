@@ -107,7 +107,7 @@ input, select, textarea, .user-info-input {
   transform: translateX(-50%);
   width: 100%;
   max-width: 720px;
-  height: auto;
+  height: 80px;
   z-index: 1030;
   background: url("./assets/img/img_header_bg.png") no-repeat center/cover;
   display: flex;
@@ -210,7 +210,7 @@ input, select, textarea, .user-info-input {
   position: relative;
   max-width: 720px;
   margin: 0 auto;
-  padding-top: 72px; 
+  padding-top: 80px; 
   padding-bottom: 108px;
   height: 100vh;
   overflow-y: auto;
