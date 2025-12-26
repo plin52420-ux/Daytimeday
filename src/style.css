@@ -418,7 +418,7 @@ input, select, textarea, .user-info-input {
 }
 .menu-bottom-btn{
   max-width: 80px;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   color: #fff;
   transition: transform 0.2s ease-out;
 
