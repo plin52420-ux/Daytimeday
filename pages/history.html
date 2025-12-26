@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="../src/assets/img/img_logo.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>白晝日｜歷史緣由</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body class="page-sub">
+    <div class="bottom-bg">
+      <div id="app" class="page-wrapper">
+      <!-- HEADER -->
+      <header class="main-header d-flex align-items-center justify-content-between px-3">
+        <!-- 漢堡選單按鈕（左） -->
+        <button
+          class="btn p-0 header-icon-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+        >
+          <img src="../src/assets/img/img_hamberger_header_btn.png" alt="選單" class="header-icon-img" />
+        </button>
+
+        <!-- LOGO（中） -->
+        <div class="header-logo">
+          <img src="../src/assets/img/img_logo.png" alt="白晝日 LOGO" class="header-logo-img" />
+        </div>
+
+        <!-- 商城按鈕（右） -->
+        <a href="./store.html" class="btn p-0 header-icon-btn">
+          <img src="../src/assets/img/img_store_header_btn.png" alt="商城" class="header-icon-img" />
+          <span style="color: #fff; font-size: 10px; white-space: nowrap;background: #262626 ;padding: 2px 4px; border-radius: 10px;">Web Store</span>
+        </a>
+      </header>
+
+      <!-- 漢堡選單：左側滑出 -->
+      <div
+        class="offcanvas offcanvas-start main-menu"
+        tabindex="-1"
+        id="mainMenu"
+        aria-labelledby="mainMenuLabel"
+      >
+        <div class="offcanvas-body">
+          <nav class="nav flex-column gap-2 align-items-center">
+            <a class="nav-link" href="./daytimeday.html">白晝日</a>
+            <a class="nav-link" href="./adventurer.html">關於冒險者</a>
+            <a class="nav-link" href="../index.html#download">開啟旅程</a>
+            <a class="nav-link" href="./history.html">歷史緣由</a>
+            <a class="nav-link" href="./worldview.html">世界觀</a>
+            <a class="nav-link" href="./future-plan.html">未來計畫</a>
+            <a class="nav-link" href="./funding.html">贊助我們</a>
+            <a class="nav-link" href="./store.html">網頁商城</a>
+            <a class="menu-bottom-btn" href="../index.html#home">
+              <img
+                src="../src/assets/img/img_back_index_btn.png"
+                alt="回到首頁"
+                class="menu-back-index-img"
+              />
+              <span>回到首頁</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- 主內容：歷史緣由 -->
+      <main class="main-content history-main-content">
+        <section class="section section-history">
+          <h2 class="text-center text-stroke">歷史緣由</h2>
+          
+          <!-- 輪播區塊 -->
+          <div id="historyCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <!-- 第 1 頁 -->
+              <div class="carousel-item active">
+                <div class="history-slide-content">
+                  <div class="history-image-wrapper mb-3">
+                    <img src="../src/assets/img/history/img_rune_clash.png" alt="RUNE CLASH" class="history-main-img  " />
+                  </div>
+                  <div class="history-text-content text-center">
+                    <p class="text-stroke">RUNE CLASH</p>
+                    <p class="text-stroke">2013</p>
+                    <p class="text-stroke">符文系列基礎戰鬥的原型</p>
+                    <p class="text-stroke">僅發表於ios平台</p>
+                    <p class="text-stroke">後經歷過一次畫面提升的大更新</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 第 2 頁 -->
+              <div class="carousel-item">
+                <div class="history-slide-content">
+                  <div class="history-image-wrapper mb-3">
+                    <img src="../src/assets/img/history/img_rune_rebirth.png" alt="RUNE REBIRTH" class="history-main-img  " />
+                  </div>
+                  <div class="history-text-content text-center">
+                    <p class="text-stroke">RUNE REBIRTH</p>
+                    <p class="text-stroke">2014</p>
+                    <p class="text-stroke">將符文戰鬥系統提升</p>
+                    <p class="text-stroke">並加入大量內容和功能</p>
+                    <p class="text-stroke">制定明確世界觀和設定</p>
+                    <p class="text-stroke">主打硬派古典的遊戲風格</p>
+                    <p class="text-stroke">奇特的氛圍讓特定玩家異常喜愛</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 第 3 頁 -->
+              <div class="carousel-item">
+                <div class="history-slide-content">
+                  <div class="history-image-wrapper mb-3">
+                    <img src="../src/assets/img/history/img_rune_hun.png" alt="RUNE HUNDERED" class="history-main-img  " />
+                  </div>
+                  <div class="history-text-content text-center">
+                    <p class="text-stroke">RUNE HUNDERED</p>
+                    <p class="text-stroke">2018</p>
+                    <p class="text-stroke">嘗試將符文複雜的內容簡化</p>
+                    <p class="text-stroke">白晝日戰鬥系統的部分原型</p>
+                    <p class="text-stroke">但礙於開發資源限制並未達理想</p>
+                    <p class="text-stroke">走較輕鬆胡鬧的氛圍</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 第 4 頁 -->
+              <div class="carousel-item">
+                <div class="history-slide-content">
+                  <div class="history-image-wrapper mb-3">
+                    <img src="../src/assets/img/history/img_rune_handbook.png" alt="RUNE RECOR" class="history-main-img  " />
+                  </div>
+                  <div class="history-text-content text-center">
+                    <p class="text-stroke">RUNE RECOR</p>
+                    <p class="text-stroke">2019</p>
+                    <p class="text-stroke">意外發表的產品</p>
+                    <p class="text-stroke">由於另一專案成員過世</p>
+                    <p class="text-stroke">故將其殘留成品集結成紀念</p>
+                    <p class="text-stroke">為一個輕度棋牌休閒遊戲</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 第 5 頁 -->
+              <div class="carousel-item">
+                <div class="history-slide-content">
+                  <div class="history-image-wrapper mb-3">
+                    <img src="../src/assets/img/history/img_rune_amaze.png" alt="RUNE AMAZE" class="history-main-img  " />
+                  </div>
+                  <div class="history-text-content text-center">
+                    <p class="text-stroke">RUNE AMAZE</p>
+                    <p class="text-stroke">2018~2020(未發表)</p>
+                    <p class="text-stroke">CUTKEY開發組首次三人成行</p>
+                    <p class="text-stroke">試圖重現探索過程的氛圍</p>
+                    <p class="text-stroke">但期間成員適逢意外</p>
+                    <p class="text-stroke">故最終沒有完成發表</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 第 6 頁 -->
+              <div class="carousel-item">
+                <div class="history-slide-content">
+                  <div class="history-image-wrapper mb-3">
+                    <img src="../src/assets/img/history/img_survivl_devil.png" alt="SUEVIVL DEVIL" class="history-main-img  " />
+                  </div>
+                  <div class="history-text-content text-center">
+                    <p class="text-stroke">殘存大魔王SUEVIVL DEVIL</p>
+                    <p class="text-stroke">2021(未發表)</p>
+                    <p class="text-stroke">由重生世界延伸的特異作</p>
+                    <p class="text-stroke">主打射擊召喚和肉鴿的射擊遊戲</p>
+                    <p class="text-stroke">有非常獨特的反諷感和音樂</p>
+                    <p class="text-stroke">但礙於開發資源限制並未完成</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 第 7 頁 -->
+              <div class="carousel-item">
+                <div class="history-slide-content">
+                  <div class="history-image-wrapper mb-3">
+                    <img src="../src/assets/img/img_daytimeday_main.png" alt="daytimeday" class="history-main-img  " />
+                  </div>
+                  <div class="history-text-content text-center">
+                    <p class="text-stroke">DAYTIMEDAY</p>
+                    <p class="text-stroke">2025年底</p>
+                    <p class="text-stroke">就是現在</p>
+                    <p class="text-stroke">歡迎體驗</p>
+                    <a class="text-link" href="../index.html#download">敬請下載</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 左側箭頭 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <!-- 右側箭頭 -->
+            <button class="carousel-control-next" type="button" data-bs-target="#historyCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="main-footer d-flex justify-content-center align-items-center">
+        <a href="./adventurer.html" class="btn p-0 footer-main-btn">
+          <img
+            src="../src/assets/img/img_footer_main_btn.png"
+            alt="關於冒險者"
+            class="footer-main-btn-img"
+          />
+        </a>
+      </footer>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

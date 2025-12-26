@@ -472,4 +472,262 @@ input, select, textarea, .user-info-input {
   }
 }
 
+/* 歷史緣由頁：輪播樣式 */
+.history-main-content{
+  overflow-y: hidden;
+}
+.section-history {
+  padding: 2rem 1rem;
+}
+
+.section-history h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+#historyCarousel {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.history-slide-content {
+  padding: 1rem;
+}
+
+.history-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.history-main-img {
+  width: 100%;
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.history-text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+.history-text-content > p {
+  font-size: 1.2rem;
+}
+
+/* 輪播控制按鈕樣式 */
+#historyCarousel .carousel-control-prev,
+#historyCarousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+#historyCarousel .carousel-control-prev {
+  left: 10px;
+}
+
+#historyCarousel .carousel-control-next {
+  right: 10px;
+}
+
+#historyCarousel .carousel-control-prev:hover,
+#historyCarousel .carousel-control-next:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#historyCarousel .carousel-control-prev-icon,
+#historyCarousel .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.text-link{
+  color: aqua;
+}
+/* 手機版樣式 */
+@media (max-width: 430px) {
+  .section-history {
+    padding: 1rem 0.5rem;
+  }
+  
+  .section-history h2 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  }
+  
+  .history-text-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .history-text-content > p {
+    font-size: 1rem;
+  }
+  #historyCarousel{
+    height: 430px;
+  }
+  
+  #historyCarousel .carousel-control-prev,
+  #historyCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #historyCarousel .carousel-control-prev {
+    left: 5px;
+  }
+  
+  #historyCarousel .carousel-control-next {
+    right: 5px;
+  }
+  .history-main-img {
+  max-width: 90%;
+}
+}
+
+/* 世界觀頁：輪播樣式 */
+.worldview-main-content{
+  overflow-y: hidden;
+}
+.section-worldview {
+  padding: 2rem 1rem;
+}
+
+.section-worldview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+#worldviewCarousel {
+  position: relative;
+  max-width: 100%;
+}
+
+.worldview-slide-content {
+  padding: 1rem;
+}
+
+.worldview-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  
+}
+
+.worldview-main-img {
+  width: 100%;
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+.worldview-main-gif {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+.worldview-text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+.worldview-text-content > p {
+  font-size: 1.2rem;
+}
+
+/* 輪播控制按鈕樣式 */
+#worldviewCarousel .carousel-control-prev,
+#worldviewCarousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+#worldviewCarousel .carousel-control-prev {
+  left: 10px;
+}
+
+#worldviewCarousel .carousel-control-next {
+  right: 10px;
+}
+
+#worldviewCarousel .carousel-control-prev:hover,
+#worldviewCarousel .carousel-control-next:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#worldviewCarousel .carousel-control-prev-icon,
+#worldviewCarousel .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 手機版樣式 */
+@media (max-width: 430px) {
+  .section-worldview {
+    padding: 1rem 0.5rem;
+  }
+  
+  .section-worldview h2 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+  
+  .worldview-text-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .worldview-text-content > p {
+    font-size: 1rem;
+  }
+  #worldviewCarousel{
+    height: 430px;
+  }
+  
+  #worldviewCarousel .carousel-control-prev,
+  #worldviewCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #worldviewCarousel .carousel-control-prev {
+    left: 5px;
+  }
+  
+  #worldviewCarousel .carousel-control-next {
+    right: 5px;
+  }
+  .worldview-main-img {
+    max-width: 90%;
+  }
+  .worldview-main-gif {
+    max-width: 55%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
